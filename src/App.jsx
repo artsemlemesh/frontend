@@ -12,13 +12,18 @@ function App() {
   }, []);
 
   const [users, setUsers] = useState(()=>createUsers(0, 5)) //pagination1
+  const [isLoading, setIsLoading] = useState(false)
+
   console.log('USRS', users)
   //adding a scroll button to go to the certain user (to check the performance)
   const virtuosoRef = useRef() 
 
 //adding pagination
-function fetchNextPage(){
+async function fetchNextPage(){
   const newUsers = createUsers(users.length, users.length + 5 )//pagination2
+  setIsLoading(true)
+  await new Promise((resolve) => setTimeout(resolve, 1000))
+  setIsLoading(false)
   setUsers([...users, ...newUsers])
 }
 
@@ -44,10 +49,11 @@ function fetchNextPage(){
         data={users}
         endReached={fetchNextPage}//add this prop to set up pagination//pagination3
         itemContent={(_, user) => <UserCard user={user}/>}  // no need key, virtuoso provides one
+        fixedFooterContent={isLoading ? ()=> <div className='bg-pink-700'>Loading</div> : undefined}
         fixedHeaderContent={()=>( //only available for TableVirtuoso component
           <tr>
-            <th className='w-[150px] bg-grayscale-700 text-left'>Id</th>
-            <th className='w-[150px] bg-grayscale-700 text-left'>Name</th>
+            <th className='w-[150px] bg-pink-700 text-left'>Id</th>
+            <th className='w-[150px] bg-pink-700 text-left'>Name</th>
           </tr>
         )}
       
