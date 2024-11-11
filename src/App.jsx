@@ -11,10 +11,17 @@ function App() {
     setupMock();
   }, []);
 
-  const [users, setUsers] = useState(createUsers)
+  const [users, setUsers] = useState(()=>createUsers(0, 5)) //pagination1
   console.log('USRS', users)
   //adding a scroll button to go to the certain user (to check the performance)
   const virtuosoRef = useRef() 
+
+//adding pagination
+function fetchNextPage(){
+  const newUsers = createUsers(users.length, users.length + 5 )//pagination2
+  setUsers([...users, ...newUsers])
+}
+
 
   return (
     <div className="App">
@@ -35,6 +42,7 @@ function App() {
       ref={virtuosoRef} //also remember to add it here
         className='!h-[200px]' // define height of the container
         data={users}
+        endReached={fetchNextPage}//add this prop to set up pagination//pagination3
         itemContent={(_, user) => <UserCard user={user}/>}  // no need key, virtuoso provides one
         fixedHeaderContent={()=>( //only available for TableVirtuoso component
           <tr>
