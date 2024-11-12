@@ -6,6 +6,7 @@ import { Virtuoso, TableVirtuoso } from 'react-virtuoso';
 import UserCard from './components/UserCard';
 import { createUsers } from './components/user';
 import TableButton from './components/ButtonTable';
+import InboxScreen from './components/InboxScreen';
 
 function App() {
   useEffect(() => {
@@ -36,6 +37,7 @@ function App() {
         fetchNextPage={fetchNextPage}
         isLoading={isLoading}
       />
+      <InboxScreen/>
     </div>
   );
 }
