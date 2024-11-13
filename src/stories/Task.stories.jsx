@@ -37,6 +37,7 @@ export const Pinned = {
   },
 };
 
+
 export const Archived = {
   args: {
     task: {
