@@ -15,6 +15,7 @@ export default {
   excludeStories: /.*Data$/,
   args: {
     ...ActionsData,
+    
   },
 };
 
@@ -25,6 +26,7 @@ export const Default = {
       title: 'Test Task',
       state: 'TASK_INBOX',
     },
+    // ...ActionsData,
   },
 };
 
@@ -34,6 +36,7 @@ export const Pinned = {
       ...Default.args.task,
       state: 'TASK_PINNED',
     },
+    // ...ActionsData
   },
 };
 

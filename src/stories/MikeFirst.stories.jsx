@@ -5,7 +5,7 @@ export default {
   component: MikeFirst,
   argTypes: {
     color: { control: 'color' }, //color picker
-    onClick: { action: 'clicked' }, //logs click event
+    onClick: { action: 'clicked' }, //logs click event, also this creates a mock function
     borderRadius: {
       control: 'select',
       options: ['1px', '2px', '3px', '4px'],
@@ -26,6 +26,8 @@ Default.args = {
   label: 'Im default btn',
   borderRadius: '5px',
   padding: '10px',
+  onClick: () => alert('Default button clicked!'), // Custom click handler
+
 };
 
 export const CustomColorPadd = Template.bind({});
@@ -35,6 +37,8 @@ CustomColorPadd.args = {
   padding: '9px',
   borderRadius: '4px',
   color: '#2c2020',
+  onClick: () => alert('Custom click event triggered!'), // Different custom click handler
+
 };
 
 export const CustomColorPaddBor = Template.bind({});
@@ -44,4 +48,6 @@ CustomColorPaddBor.args = {
   padding: '6px', // Uses an option from the control settings
   borderRadius: '2px',
   color: '#9e1cb2',
+  onClick: () => alert('This should not trigger!'), // This won't be called
+
 };

@@ -10,10 +10,12 @@ export default function Task({ task: { id, title, state }, onArchiveTask, onPinT
       >
         <input
           type="checkbox"
-          disabled={true}
+          // disabled={true}
           name="checked"
           id={`archiveTask-${id}`}
           checked={state === "TASK_ARCHIVED"}
+          onChange={() => onArchiveTask(id)} // Handle the change event
+
         />
         <span
           className="checkbox-custom"
