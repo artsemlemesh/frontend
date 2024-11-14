@@ -3,6 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Skeleton from './Skeleton';
 
+const DataPage = ({ isLoading, isEmpty, data }) => {
     if (isLoading) {
         return <Skeleton/> // Skeleton loading state
     }
