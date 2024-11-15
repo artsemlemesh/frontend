@@ -1294,6 +1294,15 @@
     "@storybook/icons" "^1.2.12"
     ts-dedent "^2.0.0"
 
+"@storybook/blocks@^8.0.8":
+  version "8.4.3"
+  resolved "https://registry.yarnpkg.com/@storybook/blocks/-/blocks-8.4.3.tgz#03017dd47349b7014f5bc15d3451a95c4b4ddcc8"
+  integrity sha512-PPC+RXievuHKYlL+oO4ygllT59YzpESklNfeHUkeyuSo0nr04UwSrbfdsQlYJo3nRP0wNKyj/NkYDvzMJ5RlTg==
+  dependencies:
+    "@storybook/csf" "^0.1.11"
+    "@storybook/icons" "^1.2.12"
+    ts-dedent "^2.0.0"
+
 "@storybook/builder-vite@8.4.2":
   version "8.4.2"
   resolved "https://registry.yarnpkg.com/@storybook/builder-vite/-/builder-vite-8.4.2.tgz#50b0830d0981198508bc5b80411ea834c91c11f6"
@@ -1303,20 +1312,52 @@
     browser-assert "^1.2.1"
     ts-dedent "^2.0.0"
 
+"@storybook/channels@^8.0.8":
+  version "8.4.3"
+  resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-8.4.3.tgz#8abbd749503a84b532b3d188af5f316bfc6aadb1"
+  integrity sha512-5rITc2SRcr0EPX7RFw8xAv/6hblA5BatNdQ+EyCAD3TiNh1L79ijRIm0ZuJjswaboPFMJhro7FsxJt3UX+zpWw==
+
 "@storybook/components@8.4.2":
   version "8.4.2"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-8.4.2.tgz#e9e7d5dfaef3e36a2654c6bfbd79aa5a4f307a20"
   integrity sha512-+W59oF7D73LAxLNmCfFrfs98cH9pyNHK9HlJoO5/lKbK4IdWhhOoqUR/AJ3ueksoLuetFat4DxyE8SN1H4Bvrg==
+
+"@storybook/components@^8.0.8":
+  version "8.4.3"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-8.4.3.tgz#830f91317da80ffe6b9ab7321a90b3afe2602585"
+  integrity sha512-5+krpYrKC0aLUlkfhKLR78Yrai0S9AP7SR3jXMpyuWIny0fIKn+Ak2IQ721A6RGW+zP02GR6/wLHI+A7CDpcAg==
 
 "@storybook/core-common@^8.0.0":
   version "8.4.2"
   resolved "https://registry.yarnpkg.com/@storybook/core-common/-/core-common-8.4.2.tgz#298cdfa0f43df4a61bf8c3d46b46797dcd926816"
   integrity sha512-om+tWPdCDuL9zSioxE1EGaZw5c8yRjQTfaVBpWCxbGOMgbbFJXOcJ9oXwmVEQSbxEPY7RUmCXcVpO3N+N+xDKA==
 
+"@storybook/core-events@^8.0.8":
+  version "8.4.3"
+  resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-8.4.3.tgz#845335859162525728f44a0d8117dcaddef2e805"
+  integrity sha512-eDY02BOB7v4kEpnemIeI52rTX0I4PxXZTeKj/E/Wy29CRyhllq4x5ntAkl83IZ8O+42rrOQGDxFHhF/tRlZWcw==
+
 "@storybook/core@8.4.2":
   version "8.4.2"
   resolved "https://registry.yarnpkg.com/@storybook/core/-/core-8.4.2.tgz#1e591fc6efef30e4e4fde4f266ca0cc9e756e516"
   integrity sha512-hF8GWoUZTjwwuV5j4OLhMHZtZQL/NYcVUBReC2Ba06c8PkFIKqKZwATr1zKd301gQ5Qwcn9WgmZxJTMgdKQtOg==
+  dependencies:
+    "@storybook/csf" "^0.1.11"
+    better-opn "^3.0.2"
+    browser-assert "^1.2.1"
+    esbuild "^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0 || ^0.24.0"
+    esbuild-register "^3.5.0"
+    jsdoc-type-pratt-parser "^4.0.0"
+    process "^0.11.10"
+    recast "^0.23.5"
+    semver "^7.6.2"
+    util "^0.12.5"
+    ws "^8.2.3"
+
+"@storybook/core@8.4.3":
+  version "8.4.3"
+  resolved "https://registry.yarnpkg.com/@storybook/core/-/core-8.4.3.tgz#218b68087c955d6ee6eaf1d454855e87da45087a"
+  integrity sha512-Ly4sR2gU2Xxu+O0qR4RJpq+Bs45Kv0JPlzdkoTDKQD8B2ozRAdvQLgBHjnBbUYw9jUPzC96uusqTJIBxIdBi7w==
   dependencies:
     "@storybook/csf" "^0.1.11"
     better-opn "^3.0.2"
@@ -1372,10 +1413,20 @@
   resolved "https://registry.yarnpkg.com/@storybook/manager-api/-/manager-api-8.4.2.tgz#6bf972accfa6339034b50a7338654ad433aac6d1"
   integrity sha512-rhPc4cgQDKDH8NUyRh/ZaJW7QIhR/PO5MNX4xc+vz71sM2nO7ONA/FrgLtCuu4SULdwilEPvGefYvLK0dE+Caw==
 
+"@storybook/manager-api@^8.0.8":
+  version "8.4.3"
+  resolved "https://registry.yarnpkg.com/@storybook/manager-api/-/manager-api-8.4.3.tgz#a2a3e2b2f8e6654bff6f732808c6a8e3d9c5c3d6"
+  integrity sha512-b09FHQLHrc3VGdodgV+EkA6V8VhpgadygDn9aVIXUULHXMQCfzzsSK9kiunFGVjH5r4BtdanucBXoBRFAi9D/g==
+
 "@storybook/preview-api@8.4.2", "@storybook/preview-api@^8.0.0":
   version "8.4.2"
   resolved "https://registry.yarnpkg.com/@storybook/preview-api/-/preview-api-8.4.2.tgz#77640e16c8662b9aa3a9dd4ec1b7362b9b4f6b3f"
   integrity sha512-5X/xvIvDPaWJKUBCo5zVeBbbjkhnwcI2KPkuOgrHVRRhuQ5WqD0RYxVtOOFNyQXme7g0nNl5RFNgvT7qv9qGeg==
+
+"@storybook/preview-api@^8.0.8":
+  version "8.4.3"
+  resolved "https://registry.yarnpkg.com/@storybook/preview-api/-/preview-api-8.4.3.tgz#c48c524f4eee79d0ed2458d88a8d6ee2f6518530"
+  integrity sha512-SQPiGJ5iNk/RMZTfTQZe27MaZz16XfIgb1GTDWuaSrDBWVcelHRCZdh8Ps+9X5Mre6GeZ9wMQ56l+hQf/DO9Ug==
 
 "@storybook/react-dom-shim@8.4.2":
   version "8.4.2"
@@ -1455,6 +1506,11 @@
   version "8.4.2"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-8.4.2.tgz#0e385869a225040e326cfba301b6cdccd31dcb21"
   integrity sha512-9j4fnu5LcV+qSs1rdwf61Bt14lms0T1LOZkHxGNcS1c1oH+cPS+sxECh2lxtni+mvOAHUlBs9pKhVZzRPdWpvg==
+
+"@storybook/theming@^8.0.8":
+  version "8.4.3"
+  resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-8.4.3.tgz#c264898c7668457a729c238cc463d7600f2a5f03"
+  integrity sha512-ORQY2/C488ur5NkQYes6x+fO5rcyRMyh4uX3DlkNhCsA2CJ/Ik3WVGjprrDuLn+9S4+mtXfVUNfvN7xszlT1oA==
 
 "@swc/core-darwin-arm64@1.9.1":
   version "1.9.1"
@@ -4816,6 +4872,11 @@ mkdirp@^1.0.4:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
+mock-xmlhttprequest@^8.1.0:
+  version "8.4.0"
+  resolved "https://registry.yarnpkg.com/mock-xmlhttprequest/-/mock-xmlhttprequest-8.4.0.tgz#86a5f3c1d5bf6407228afc854d54af35f90e7a18"
+  integrity sha512-+77RbXL/KIvbK6yFWuhFZIotDEtzXvsP1F2nyzfAq+BngQ6MaOmzgwA5vzHxhm1D1tLznFnaZ+QFjlZBnm/jsQ==
+
 ms@^2.1.3:
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
@@ -5151,7 +5212,7 @@ path-scurry@^1.11.1:
     lru-cache "^10.2.0"
     minipass "^5.0.0 || ^6.0.2 || ^7.0.0"
 
-path-to-regexp@^6.3.0:
+path-to-regexp@^6.2.1, path-to-regexp@^6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-6.3.0.tgz#2b6a26a337737a8e1416f9272ed0766b1c0389f4"
   integrity sha512-Yhpw4T9C6hPpgPeA28us07OJeqZ5EzQTkbfwuhsUg0c237RomFoETJgmp2sa3F/41gfLE6G5cqcYwznmeEeOlQ==
@@ -5807,6 +5868,32 @@ statuses@^2.0.1:
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-2.0.1.tgz#55cb000ccf1d48728bd23c685a063998cf1a1b63"
   integrity sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==
 
+storybook-addon-mock@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/storybook-addon-mock/-/storybook-addon-mock-5.0.0.tgz#084322fd2b8e634b0d83423676c556462315a5e3"
+  integrity sha512-AGhfdAsksusJgh/VNcaGbXe1gJIVx8RKuPYMCkmCRyeMAEZggrWcU7nIADZWUJuD477mKUkaBP7I54p+3527Xg==
+  dependencies:
+    "@storybook/blocks" "^8.0.8"
+    "@storybook/channels" "^8.0.8"
+    "@storybook/components" "^8.0.8"
+    "@storybook/core-events" "^8.0.8"
+    "@storybook/manager-api" "^8.0.8"
+    "@storybook/preview-api" "^8.0.8"
+    "@storybook/theming" "^8.0.8"
+    mock-xmlhttprequest "^8.1.0"
+    path-to-regexp "^6.2.1"
+    polished "^4.2.2"
+    prop-types "^15.8.1"
+    storybook "^8.0.8"
+    whatwg-fetch "^3.6.19"
+
+storybook@^8.0.8:
+  version "8.4.3"
+  resolved "https://registry.yarnpkg.com/storybook/-/storybook-8.4.3.tgz#2e281f54aa54f082aee7ed9c00c7b6504f247791"
+  integrity sha512-n+6ME+APinsx0zjNTmx3SntJ4iCgoTK7TsxUC8+op/rUAA8hNbD+/NT7Qx/F5peHNchVeVFGtebPDAHU9g1M/Q==
+  dependencies:
+    "@storybook/core" "8.4.3"
+
 storybook@^8.4.2:
   version "8.4.2"
   resolved "https://registry.yarnpkg.com/storybook/-/storybook-8.4.2.tgz#02e71cf32db25af713b3681b1b52be1403b478dd"
@@ -6375,6 +6462,11 @@ webpack-virtual-modules@^0.6.2:
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/webpack-virtual-modules/-/webpack-virtual-modules-0.6.2.tgz#057faa9065c8acf48f24cb57ac0e77739ab9a7e8"
   integrity sha512-66/V2i5hQanC51vBQKPH4aI8NMAcBW59FVBs+rC7eGHupMyfn34q7rZIE+ETlJ+XTevqfUhVVBgSUNSW2flEUQ==
+
+whatwg-fetch@^3.6.19:
+  version "3.6.20"
+  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-3.6.20.tgz#580ce6d791facec91d37c72890995a0b48d31c70"
+  integrity sha512-EqhiFU6daOA8kpjOWTL0olhVOF3i7OrFzSYiGsEMB8GcXS+RrzauAERX65xMeNWVqxA6HXH2m69Z9LaKKdisfg==
 
 which-boxed-primitive@^1.0.2:
   version "1.0.2"
