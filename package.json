@@ -10,12 +10,15 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "msw:init": "msw init public/ --save"
+    "msw:init": "msw init public/ --save",
+    "test-storybook": "test-storybook"
+
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.3.0",
     "axios": "^1.7.7",
     "axios-mock-adapter": "^2.1.0",
+    "msw": "^2.6.4",
     "msw-storybook-addon": "^2.0.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -34,7 +37,6 @@
     "@storybook/react": "^8.4.2",
     "@storybook/react-vite": "^8.4.2",
     "@storybook/test": "^8.4.2",
-    "@storybook/test-runner": "^0.19.1",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react-swc": "^3.5.0",
@@ -45,11 +47,9 @@
     "eslint-plugin-react-refresh": "^0.4.14",
     "eslint-plugin-storybook": "^0.11.0",
     "globals": "^15.11.0",
-    "msw": "^2.6.4",
     "postcss": "^8.4.48",
     "prop-types": "^15.8.1",
     "storybook": "^8.4.2",
-    "storybook-addon-mock": "^5.0.0",
     "tailwindcss": "^3.4.14",
     "vite": "^5.4.10"
   },
