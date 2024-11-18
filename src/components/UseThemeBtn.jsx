@@ -15,6 +15,7 @@ export default function ThemeBtn({ label }) {
         borderRadius: '5px',
         cursor: 'pointer',
       }}
+      name='submit'
     >
       {label} (Current theme: {theme})
     </button>

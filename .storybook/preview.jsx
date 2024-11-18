@@ -19,6 +19,7 @@ const preview = {
         { name: 'Light', value: '#F7F9F2' },
         // 👇 Add your own
         { name: 'Maroon', value: '#400' },
+        { name: 'Pink', value: '#e723c6' },
       ],
       // 👇 Specify which background is shown by default
       default: 'Light',

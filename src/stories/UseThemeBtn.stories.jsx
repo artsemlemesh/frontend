@@ -1,3 +1,4 @@
+import { expect, userEvent, within } from '@storybook/test';
 import ThemeBtn from '../components/UseThemeBtn';
 import { ThemeProvider } from '../context/ThemeContext';
 
@@ -35,3 +36,28 @@ DarkTheme.parameters = {
     ),
   ];
 
+export const PinkTheme = Template.bind({})
+PinkTheme.args = {
+    label: 'pinkness'
+}
+PinkTheme.parameters = {
+    backgrounds: {
+        default: 'Pink'
+    }
+}
+ 
+PinkTheme.play = async ({ canvasElement }) => {
+        const canvas = within(canvasElement);
+        const button = await canvas.getByText('pinkness \(Current theme: pink\)')
+        await userEvent.click(button)
+
+       
+    },
+
+PinkTheme.decorators = [
+    (Story) => (
+      <ThemeProvider defaultTheme="pink">
+        <Story />
+      </ThemeProvider>
+    ),
+  ];
